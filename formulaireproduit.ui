@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormulaireProduit</class>
+ <widget class="QDialog" name="FormulaireProduit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>462</width>
+    <height>370</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>462</width>
+    <height>370</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Formulaire de produit</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(156, 84, 84);</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>401</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="Stock">
+      <property name="styleSheet">
+       <string notr="true">#Stock{
+	background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;
+	color: white;
+	border:none;
+	font-size:18px;
+	border-bottom:2px solid  white;
+	padding:2px 2px 5px 12px;
+}
+#Stock:focus{
+border-bottom:2px solid  red;
+	
+}
+</string>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="NumProduit">
+      <property name="styleSheet">
+       <string notr="true">#NumProduit{
+	background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;
+	color: white;
+	border:none;
+	font-size:18px;
+	border-bottom:2px solid  white;
+	padding:2px 2px 5px 12px;
+}
+#NumProduit:focus{
+border-bottom:2px solid  red;
+	
+}
+</string>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="Designation">
+      <property name="styleSheet">
+       <string notr="true">#Designation{
+	background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;
+	color: white;
+	border:none;
+	font-size:18px;
+	border-bottom:2px solid  white;
+	padding:2px 2px 5px 12px;
+}
+#Designation:focus{
+border-bottom:2px solid  red;
+	
+}
+</string>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Designation :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Quantité     :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;</string>
+      </property>
+      <property name="text">
+       <string> Numéro      :</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>290</y>
+     <width>401</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>30</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="btnAnnulerAjout">
+      <property name="styleSheet">
+       <string notr="true">#btnAnnulerAjout{
+	background-color: rgb(255, 255, 255);
+	font: 700 12pt &quot;Serif&quot;;
+	color: rgb(94, 12, 12);
+	border-radius:10px;
+
+}
+#btnAnnulerAjout:hover{
+	background-color:  rgb(94, 12, 12);
+	font: 700 12pt &quot;Serif&quot;;
+	color: white;
+	border-radius:10px;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Annuler</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnValiderAjout">
+      <property name="styleSheet">
+       <string notr="true">#btnValiderAjout{
+	background-color: rgb(255, 255, 255);
+	font: 700 12pt &quot;Serif&quot;;
+	color: rgb(94, 12, 12);
+	border-radius:10px;
+
+}
+#btnValiderAjout:hover{
+	background-color:  rgb(94, 12, 12);
+	font: 700 12pt &quot;Serif&quot;;
+	color: white;
+	border-radius:10px;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Valider</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="styleSheet">
+       <string notr="true">#pushButton{
+	background-color: rgb(255, 255, 255);
+	font: 700 12pt &quot;Serif&quot;;
+	color: rgb(94, 12, 12);
+	border-radius:10px;
+
+}
+#pushButton:hover{
+	background-color:  rgb(94, 12, 12);
+	font: 700 12pt &quot;Serif&quot;;
+	color: white;
+	border-radius:10px;
+
+}
+</string>
+      </property>
+      <property name="text">
+       <string>valider</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>471</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(156, 84, 84);</string>
+   </property>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>gridLayoutWidget</zorder>
+  <zorder>horizontalLayoutWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

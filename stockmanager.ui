@@ -1,0 +1,2155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StockManager</class>
+ <widget class="QMainWindow" name="StockManager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>990</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Alpha Stock</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="image-icon.qrc">
+    <normaloff>:/image/index.jpeg</normaloff>:/image/index.jpeg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(246, 245, 244);
+background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="verticalWidget" native="true">
+        <property name="maximumSize">
+         <size>
+          <width>120</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="widget" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>220</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #ff80475b;
+border-radius:30px;
+</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="topMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <property name="bottomMargin">
+             <number>9</number>
+            </property>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>100</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;</string>
+                </property>
+                <property name="text">
+                 <string>Alpha Stock</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="verticalWidget_3" native="true">
+                <property name="styleSheet">
+                 <string notr="true"/>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="btnAccueil">
+                   <property name="toolTip">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Accueil &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);
+</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="image-icon.qrc">
+                     <normaloff>:/image/diagram-06_24511.png</normaloff>:/image/diagram-06_24511.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>50</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnGestionStock">
+                   <property name="toolTip">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Gestion de Stock&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="image-icon.qrc">
+                     <normaloff>:/image/folder_data_16609.png</normaloff>:/image/folder_data_16609.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>50</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="image-icon.qrc">
+                     <normaloff>:/image/bar_chart_22178.png</normaloff>:/image/bar_chart_22178.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>50</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnParametreAdministrateur">
+                   <property name="toolTip">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Paramètre administrateur&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="image-icon.qrc">
+                     <normaloff>:/image/admin_person_user_man_2839.png</normaloff>:/image/admin_person_user_man_2839.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>50</width>
+                     <height>50</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="btnQuitter">
+                   <property name="toolTip">
+                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quitter&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true"/>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset resource="image-icon.qrc">
+                     <normaloff>:/image/button_log_off_14996.png</normaloff>:/image/button_log_off_14996.png</iconset>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>40</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QStackedWidget" name="stackedWidget">
+          <property name="currentIndex">
+           <number>2</number>
+          </property>
+          <widget class="QWidget" name="Administrateur">
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QWidget" name="horizontalWidget" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>50</height>
+               </size>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_14">
+               <property name="topMargin">
+                <number>9</number>
+               </property>
+               <property name="rightMargin">
+                <number>9</number>
+               </property>
+               <property name="bottomMargin">
+                <number>9</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_21">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(156, 84, 84);
+border-top-right-radius:25px;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_20">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(156, 84, 84);
+border-bottom-left-radius: 25px;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <property name="spacing">
+               <number>2</number>
+              </property>
+              <item>
+               <widget class="QWidget" name="horizontalWidget" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>60</height>
+                 </size>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_27">
+                 <property name="leftMargin">
+                  <number>60</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>60</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="label_22">
+                   <property name="maximumSize">
+                    <size>
+                     <width>80</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">image: url(:/image/icon-5404125_960_720.png);</string>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label">
+                   <property name="styleSheet">
+                    <string notr="true">font: 80 italic 16pt &quot;TeX Gyre Bonum Math&quot;;
+color: rgb(104, 10, 10);</string>
+                   </property>
+                   <property name="text">
+                    <string>           GESTION D'UTILISATEUR</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_6" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>200</height>
+                 </size>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_7">
+                   <item>
+                    <widget class="QWidget" name="formWidget" native="true">
+                     <property name="maximumSize">
+                      <size>
+                       <width>400</width>
+                       <height>16777215</height>
+                      </size>
+                     </property>
+                     <layout class="QFormLayout" name="formLayout_2">
+                      <property name="leftMargin">
+                       <number>50</number>
+                      </property>
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="label_3">
+                        <property name="styleSheet">
+                         <string notr="true">font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>Nom  :</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QLineEdit" name="lineEditNomUtilisateur"/>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="label_4">
+                        <property name="styleSheet">
+                         <string notr="true">font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>Prenom</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QLineEdit" name="lineEditPrenomUtilisateur"/>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="label_8">
+                        <property name="styleSheet">
+                         <string notr="true">font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>Sexe   :</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QComboBox" name="comboBoxSexeUtilisateur">
+                        <item>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Masculin</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Féminin</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QLabel" name="label_14">
+                        <property name="styleSheet">
+                         <string notr="true">font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>Age      :</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="1">
+                       <widget class="QLineEdit" name="lineEditAgeUtilisateur"/>
+                      </item>
+                      <item row="4" column="0">
+                       <widget class="QLabel" name="label_9">
+                        <property name="styleSheet">
+                         <string notr="true">font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>Date d'ajout :</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="4" column="1">
+                       <widget class="QDateEdit" name="dateEditUtilisateur"/>
+                      </item>
+                      <item row="5" column="0">
+                       <widget class="QLabel" name="label_15">
+                        <property name="styleSheet">
+                         <string notr="true">font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>Mot de passe</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="5" column="1">
+                       <widget class="QLineEdit" name="lineEditPsswrdUtilisateur"/>
+                      </item>
+                      <item row="6" column="0">
+                       <widget class="QLabel" name="label_19">
+                        <property name="styleSheet">
+                         <string notr="true">font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;</string>
+                        </property>
+                        <property name="text">
+                         <string>Type       :</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="6" column="1">
+                       <widget class="QComboBox" name="comboBoxType">
+                        <item>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Administrateur</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>Utilisateur</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QWidget" name="verticalWidget_3" native="true">
+                     <property name="maximumSize">
+                      <size>
+                       <width>300</width>
+                       <height>300</height>
+                      </size>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_30">
+                      <property name="spacing">
+                       <number>15</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>20</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>100</number>
+                      </property>
+                      <item>
+                       <widget class="QPushButton" name="btnAjouterUtilisateur">
+                        <property name="styleSheet">
+                         <string notr="true">#btnAjouterUtilisateur{
+	color:white;
+	background-color: rgb(156, 84, 84);
+	font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;
+border:2px solid rgb(94, 12, 12);
+}
+#btnAjouterUtilisateur:hover{
+	color: white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Ajouter</string>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="image-icon.qrc">
+                          <normaloff>:/image/business_application_addmale_useradd_insert_add_user_client_2312.png</normaloff>:/image/business_application_addmale_useradd_insert_add_user_client_2312.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>40</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="btnModifierUtilisateur">
+                        <property name="styleSheet">
+                         <string notr="true">#btnModifierUtilisateur{
+	color:white;
+	background-color: rgb(156, 84, 84);
+	font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;
+border:2px solid rgb(94, 12, 12);
+}
+#btnModifierUtilisateur:hover{
+	color: white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Modifier</string>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="image-icon.qrc">
+                          <normaloff>:/image/businessapplication_edit_male_user_thepencil_theclient_negocio_2321.png</normaloff>:/image/businessapplication_edit_male_user_thepencil_theclient_negocio_2321.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>40</width>
+                          <height>40</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="btnSupprimerUtilisateur">
+                        <property name="styleSheet">
+                         <string notr="true">#btnSupprimerUtilisateur{
+	color:white;
+	background-color: rgb(156, 84, 84);
+	font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;
+border:2px solid rgb(94, 12, 12);
+}
+#btnSupprimerUtilisateur:hover{
+	color: white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Supprimer</string>
+                        </property>
+                        <property name="icon">
+                         <iconset resource="image-icon.qrc">
+                          <normaloff>:/image/delete_delete_deleteusers_delete_male_user_maleclient_2348.png</normaloff>:/image/delete_delete_deleteusers_delete_male_user_maleclient_2348.png</iconset>
+                        </property>
+                        <property name="iconSize">
+                         <size>
+                          <width>40</width>
+                          <height>50</height>
+                         </size>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="btnAnnuler">
+                        <property name="styleSheet">
+                         <string notr="true">#btnAnnuler{
+	color:white;
+	background-color: rgb(156, 84, 84);
+	font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;
+border:2px solid rgb(94, 12, 12);
+}
+#btnAnnuler:hover{
+	color: white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                        </property>
+                        <property name="text">
+                         <string>Annuler</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QTableView" name="tabwListeUtilisateur"/>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="Accueil">
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <item>
+             <widget class="QWidget" name="horizontalWidget" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_13">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_6">
+                 <property name="maximumSize">
+                  <size>
+                   <width>500</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(156, 84, 84);
+border-top-right-radius:25px;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_7">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(156, 84, 84);
+border-bottom-left-radius: 25px;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="verticalWidget_3" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <item>
+                <widget class="QWidget" name="horizontalWidget_2" native="true">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>80</height>
+                  </size>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_3">
+                  <property name="spacing">
+                   <number>20</number>
+                  </property>
+                  <item>
+                   <widget class="QWidget" name="widget_3" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+background-color: #fffcd433;</string>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_10">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_9">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="label_23">
+                         <property name="minimumSize">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">image: url(:/image/icons8-fichier-de-rapport-64.png);</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="labelProduitMin">
+                         <property name="styleSheet">
+                          <string notr="true">font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="widget_4" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+background-color: #ffff5367;</string>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_12">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_11">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="label_25">
+                         <property name="minimumSize">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">image: url(:/image/icons8-fichier-de-rapport-64.png);</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="labelProduitMax">
+                         <property name="styleSheet">
+                          <string notr="true">font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="widget_2" native="true">
+                    <property name="styleSheet">
+                     <string notr="true">border-radius:20px;
+color: rgb(255, 255, 255);
+background-color: #ff80475b;</string>
+                    </property>
+                    <layout class="QHBoxLayout" name="horizontalLayout_16">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <layout class="QHBoxLayout" name="horizontalLayout_15">
+                       <item>
+                        <widget class="QLabel" name="label_26">
+                         <property name="minimumSize">
+                          <size>
+                           <width>20</width>
+                           <height>40</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">image: url(:/image/icons8-fichier-de-rapport-64.png);</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="labelNbrProduit">
+                         <property name="styleSheet">
+                          <string notr="true">font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;</string>
+                         </property>
+                         <property name="text">
+                          <string/>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="horizontalFrame">
+                 <layout class="QHBoxLayout" name="horizontalLayout_4">
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_5">
+                    <item>
+                     <widget class="QFrame" name="horizontalFrameBarchart">
+                      <layout class="QHBoxLayout" name="horizontalLayout_6"/>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="verticalWidget_10" native="true">
+                    <property name="maximumSize">
+                     <size>
+                      <width>350</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(246, 245, 244);
+border-top-right-radius:30px;</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_31">
+                     <property name="spacing">
+                      <number>10</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>10</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>100</number>
+                     </property>
+                     <item>
+                      <widget class="QWidget" name="horizontalWidget" native="true">
+                       <layout class="QHBoxLayout" name="horizontalLayout_29">
+                        <item>
+                         <widget class="QLabel" name="label_28">
+                          <property name="minimumSize">
+                           <size>
+                            <width>50</width>
+                            <height>50</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>40</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">image: url(:/image/user.png);</string>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="profiluser">
+                          <property name="styleSheet">
+                           <string notr="true">color: rgb(94, 12, 12);
+font: 81 italic 16pt &quot;TeX Gyre Bonum Math&quot;;
+font-weight:bold;
+</string>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="horizontalWidget" native="true">
+                       <property name="styleSheet">
+                        <string notr="true">border-bottom: 1px solid grey;</string>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_28">
+                        <item>
+                         <widget class="QLabel" name="label_24">
+                          <property name="maximumSize">
+                           <size>
+                            <width>40</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">image: url(:/image/calendar_office_day_1474.png);</string>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="datejour">
+                          <property name="styleSheet">
+                           <string notr="true">font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;</string>
+                          </property>
+                          <property name="text">
+                           <string/>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="gestion">
+           <layout class="QHBoxLayout" name="horizontalLayout_18">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_17">
+              <item>
+               <widget class="QTabWidget" name="tabWidget">
+                <property name="styleSheet">
+                 <string notr="true">QTabBar{
+	color: rgb(255, 255, 255);
+	font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;
+	background-color: rgb(156, 84, 84);
+}
+QTabBar::tab:selected{
+	color:rgb(156, 84, 84);
+	background-color: white;
+}
+QTabBar::tab:hover{
+	color: white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                </property>
+                <property name="tabPosition">
+                 <enum>QTabWidget::North</enum>
+                </property>
+                <property name="tabShape">
+                 <enum>QTabWidget::Rounded</enum>
+                </property>
+                <property name="currentIndex">
+                 <number>1</number>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>40</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <widget class="QWidget" name="tab">
+                 <attribute name="icon">
+                  <iconset resource="image-icon.qrc">
+                   <normaloff>:/image/list_notes_930.png</normaloff>:/image/list_notes_930.png</iconset>
+                 </attribute>
+                 <attribute name="title">
+                  <string>Liste Produit / Bon</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_13">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_12">
+                    <item>
+                     <widget class="QWidget" name="horizontalWidget_9" native="true">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_19">
+                       <property name="spacing">
+                        <number>100</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>100</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>100</number>
+                       </property>
+                       <item>
+                        <widget class="QPushButton" name="btnListeProduit">
+                         <property name="styleSheet">
+                          <string notr="true">#btnListeProduit{
+	color:white;
+	background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;
+}
+#btnListeProduit:hover{
+	color:white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Liste produit</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="btnListeBon">
+                         <property name="styleSheet">
+                          <string notr="true">#btnListeBon{
+	color:white;
+	background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;
+}
+#btnListeBon:hover{
+	color:white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Liste bon</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QStackedWidget" name="stackedWidget_2">
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <widget class="QWidget" name="page_4">
+                       <layout class="QVBoxLayout" name="verticalLayout_15">
+                        <item>
+                         <layout class="QVBoxLayout" name="verticalLayout_14">
+                          <property name="leftMargin">
+                           <number>50</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>50</number>
+                          </property>
+                          <item alignment="Qt::AlignRight">
+                           <widget class="QLineEdit" name="searchListeBon">
+                            <property name="minimumSize">
+                             <size>
+                              <width>350</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true"/>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Recherche bon</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QTableView" name="tbvListeBon">
+                            <property name="styleSheet">
+                             <string notr="true"/>
+                            </property>
+                            <attribute name="horizontalHeaderCascadingSectionResizes">
+                             <bool>true</bool>
+                            </attribute>
+                            <attribute name="horizontalHeaderDefaultSectionSize">
+                             <number>150</number>
+                            </attribute>
+                            <attribute name="horizontalHeaderStretchLastSection">
+                             <bool>true</bool>
+                            </attribute>
+                            <attribute name="verticalHeaderCascadingSectionResizes">
+                             <bool>true</bool>
+                            </attribute>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QWidget" name="horizontalWidget_9" native="true">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>30</height>
+                             </size>
+                            </property>
+                            <layout class="QHBoxLayout" name="horizontalLayout_24">
+                             <property name="spacing">
+                              <number>20</number>
+                             </property>
+                             <property name="rightMargin">
+                              <number>320</number>
+                             </property>
+                             <item>
+                              <widget class="QPushButton" name="btnListeEntree">
+                               <property name="styleSheet">
+                                <string notr="true">#btnListeEntree{
+	color:white;
+	background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;
+}
+#btnListeEntree:hover{
+	color:white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                               </property>
+                               <property name="text">
+                                <string>Bon d'entrée</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item>
+                              <widget class="QPushButton" name="btnListeSortie">
+                               <property name="styleSheet">
+                                <string notr="true">#btnListeSortie{
+	color:white;
+	background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;
+}
+#btnListeSortie:hover{
+	color:white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                               </property>
+                               <property name="text">
+                                <string>Bon de sortie</string>
+                               </property>
+                              </widget>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                      <widget class="QWidget" name="page_5">
+                       <layout class="QVBoxLayout" name="verticalLayout_19">
+                        <item>
+                         <layout class="QVBoxLayout" name="verticalLayout_18">
+                          <property name="leftMargin">
+                           <number>50</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>50</number>
+                          </property>
+                          <item alignment="Qt::AlignRight">
+                           <widget class="QLineEdit" name="searchListeProduit">
+                            <property name="minimumSize">
+                             <size>
+                              <width>350</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">#searchProduit:focus{
+	border:1px solid rgb(94, 12, 12);
+
+}</string>
+                            </property>
+                            <property name="placeholderText">
+                             <string>Recherche produit</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QTableView" name="tbviewListeProduit">
+                            <property name="styleSheet">
+                             <string notr="true"/>
+                            </property>
+                            <attribute name="horizontalHeaderCascadingSectionResizes">
+                             <bool>true</bool>
+                            </attribute>
+                            <attribute name="horizontalHeaderDefaultSectionSize">
+                             <number>230</number>
+                            </attribute>
+                            <attribute name="horizontalHeaderStretchLastSection">
+                             <bool>true</bool>
+                            </attribute>
+                            <attribute name="verticalHeaderCascadingSectionResizes">
+                             <bool>true</bool>
+                            </attribute>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="tab_2">
+                 <attribute name="icon">
+                  <iconset resource="image-icon.qrc">
+                   <normaloff>:/image/stuffitboxproduct_stuffit_caj_2624.png</normaloff>:/image/stuffitboxproduct_stuffit_caj_2624.png</iconset>
+                 </attribute>
+                 <attribute name="title">
+                  <string>Gestion Produit / Bon</string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_17">
+                  <item>
+                   <widget class="QWidget" name="verticalWidget_5" native="true">
+                    <layout class="QVBoxLayout" name="verticalLayout_16">
+                     <item>
+                      <widget class="QWidget" name="horizontalWidget_9" native="true">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_20">
+                        <property name="spacing">
+                         <number>100</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>100</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>100</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QPushButton" name="btnGestionProduit">
+                          <property name="styleSheet">
+                           <string notr="true">#btnGestionProduit{
+	color:white;
+	background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;
+}
+#btnGestionProduit:hover{
+	color:white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                          </property>
+                          <property name="text">
+                           <string>Gestion produit</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="btnGestionBon">
+                          <property name="styleSheet">
+                           <string notr="true">#btnGestionBon{
+	color:white;
+	background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;
+}
+#btnGestionBon:hover{
+	color:white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                          </property>
+                          <property name="text">
+                           <string>Gestion bon</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QStackedWidget" name="stackedWidget_3">
+                       <property name="currentIndex">
+                        <number>1</number>
+                       </property>
+                       <widget class="QWidget" name="page">
+                        <layout class="QVBoxLayout" name="verticalLayout_21">
+                         <item>
+                          <layout class="QVBoxLayout" name="verticalLayout_20">
+                           <property name="leftMargin">
+                            <number>20</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>20</number>
+                           </property>
+                           <item>
+                            <widget class="QWidget" name="horizontalWidget_9" native="true">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>40</height>
+                              </size>
+                             </property>
+                             <layout class="QHBoxLayout" name="horizontalLayout_21">
+                              <property name="spacing">
+                               <number>40</number>
+                              </property>
+                              <property name="leftMargin">
+                               <number>40</number>
+                              </property>
+                              <property name="rightMargin">
+                               <number>40</number>
+                              </property>
+                              <item>
+                               <widget class="QPushButton" name="btnAjout">
+                                <property name="styleSheet">
+                                 <string notr="true">#btnAjout{
+	color:white;
+	background-color: rgb(156, 84, 84);
+	font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;
+border:2px solid rgb(94, 12, 12);
+}
+#btnAjout:hover{
+	color: white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                                </property>
+                                <property name="text">
+                                 <string>Ajouter</string>
+                                </property>
+                                <property name="icon">
+                                 <iconset resource="image-icon.qrc">
+                                  <normaloff>:/image/add_also_insert_255.png</normaloff>:/image/add_also_insert_255.png</iconset>
+                                </property>
+                                <property name="iconSize">
+                                 <size>
+                                  <width>30</width>
+                                  <height>40</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="btnModifierProduit">
+                                <property name="styleSheet">
+                                 <string notr="true">#btnModifierProduit{
+	color:white;
+	background-color: rgb(156, 84, 84);
+	font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;
+border:2px solid rgb(94, 12, 12);
+}
+#btnModifierProduit:hover{
+	color: white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                                </property>
+                                <property name="text">
+                                 <string>Modifier</string>
+                                </property>
+                                <property name="icon">
+                                 <iconset resource="image-icon.qrc">
+                                  <normaloff>:/image/refresh_arrow_1546.png</normaloff>:/image/refresh_arrow_1546.png</iconset>
+                                </property>
+                                <property name="iconSize">
+                                 <size>
+                                  <width>30</width>
+                                  <height>40</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="btnSupprimerProduit">
+                                <property name="styleSheet">
+                                 <string notr="true">#btnSupprimerProduit{
+	color:white;
+	background-color: rgb(156, 84, 84);
+	font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;
+border:2px solid rgb(94, 12, 12);
+}
+#btnSupprimerProduit:hover{
+	color: white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                                </property>
+                                <property name="text">
+                                 <string>Supprimer</string>
+                                </property>
+                                <property name="icon">
+                                 <iconset resource="image-icon.qrc">
+                                  <normaloff>:/image/delete_40623.png</normaloff>:/image/delete_40623.png</iconset>
+                                </property>
+                                <property name="iconSize">
+                                 <size>
+                                  <width>30</width>
+                                  <height>40</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                              <item>
+                               <widget class="QPushButton" name="btnActualiser">
+                                <property name="styleSheet">
+                                 <string notr="true">#btnActualiser{
+	color:white;
+	background-color: rgb(156, 84, 84);
+	font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;
+border:2px solid rgb(94, 12, 12);
+}
+#btnActualiser:hover{
+	color: white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                                </property>
+                                <property name="text">
+                                 <string>Actualiser</string>
+                                </property>
+                                <property name="icon">
+                                 <iconset resource="image-icon.qrc">
+                                  <normaloff>:/image/refresh_arrow_17867.png</normaloff>:/image/refresh_arrow_17867.png</iconset>
+                                </property>
+                                <property name="iconSize">
+                                 <size>
+                                  <width>40</width>
+                                  <height>40</height>
+                                 </size>
+                                </property>
+                               </widget>
+                              </item>
+                             </layout>
+                            </widget>
+                           </item>
+                           <item alignment="Qt::AlignRight">
+                            <widget class="QLineEdit" name="lineEditSearchProduit">
+                             <property name="minimumSize">
+                              <size>
+                               <width>350</width>
+                               <height>0</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">#lineEditSearchProduit:focus{
+	border:1px solid rgb(94, 12, 12);
+
+}</string>
+                             </property>
+                             <property name="placeholderText">
+                              <string>Recherche produit</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QTableView" name="tabwListeProduit">
+                             <property name="styleSheet">
+                              <string notr="true"/>
+                             </property>
+                             <attribute name="horizontalHeaderCascadingSectionResizes">
+                              <bool>true</bool>
+                             </attribute>
+                             <attribute name="horizontalHeaderDefaultSectionSize">
+                              <number>230</number>
+                             </attribute>
+                             <attribute name="horizontalHeaderStretchLastSection">
+                              <bool>true</bool>
+                             </attribute>
+                             <attribute name="verticalHeaderCascadingSectionResizes">
+                              <bool>true</bool>
+                             </attribute>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </widget>
+                       <widget class="QWidget" name="page_2">
+                        <layout class="QVBoxLayout" name="verticalLayout_23">
+                         <item>
+                          <widget class="QWidget" name="verticalWidget_7" native="true">
+                           <layout class="QVBoxLayout" name="verticalLayout_22">
+                            <property name="leftMargin">
+                             <number>20</number>
+                            </property>
+                            <property name="rightMargin">
+                             <number>20</number>
+                            </property>
+                            <item>
+                             <widget class="QWidget" name="horizontalWidget_10" native="true">
+                              <property name="minimumSize">
+                               <size>
+                                <width>0</width>
+                                <height>40</height>
+                               </size>
+                              </property>
+                              <layout class="QHBoxLayout" name="horizontalLayout_22">
+                               <property name="spacing">
+                                <number>40</number>
+                               </property>
+                               <property name="leftMargin">
+                                <number>40</number>
+                               </property>
+                               <property name="rightMargin">
+                                <number>40</number>
+                               </property>
+                               <item>
+                                <widget class="QPushButton" name="btnAjoutBon">
+                                 <property name="styleSheet">
+                                  <string notr="true">#btnAjoutBon{
+	color:white;
+	background-color: rgb(156, 84, 84);
+	font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;
+border:2px solid rgb(94, 12, 12);
+}
+#btnAjoutBon:hover{
+	color: white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Ajouter</string>
+                                 </property>
+                                 <property name="icon">
+                                  <iconset resource="image-icon.qrc">
+                                   <normaloff>:/image/add_also_insert_255.png</normaloff>:/image/add_also_insert_255.png</iconset>
+                                 </property>
+                                 <property name="iconSize">
+                                  <size>
+                                   <width>30</width>
+                                   <height>40</height>
+                                  </size>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QPushButton" name="btnModifierBon">
+                                 <property name="styleSheet">
+                                  <string notr="true">#btnModifierBon{
+	color:white;
+	background-color: rgb(156, 84, 84);
+	font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;
+border:2px solid rgb(94, 12, 12);
+}
+#btnModifierBon:hover{
+	color: white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Modifier</string>
+                                 </property>
+                                 <property name="icon">
+                                  <iconset resource="image-icon.qrc">
+                                   <normaloff>:/image/refresh_arrow_1546.png</normaloff>:/image/refresh_arrow_1546.png</iconset>
+                                 </property>
+                                 <property name="iconSize">
+                                  <size>
+                                   <width>30</width>
+                                   <height>40</height>
+                                  </size>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QPushButton" name="btnSupprimerBon">
+                                 <property name="styleSheet">
+                                  <string notr="true">#btnSupprimerBon{
+	color:white;
+	background-color: rgb(156, 84, 84);
+	font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;
+border:2px solid rgb(94, 12, 12);
+}
+#btnSupprimerBon:hover{
+	color: white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Supprimer</string>
+                                 </property>
+                                 <property name="icon">
+                                  <iconset resource="image-icon.qrc">
+                                   <normaloff>:/image/delete_40623.png</normaloff>:/image/delete_40623.png</iconset>
+                                 </property>
+                                 <property name="iconSize">
+                                  <size>
+                                   <width>30</width>
+                                   <height>40</height>
+                                  </size>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QPushButton" name="btnActualiserBon">
+                                 <property name="styleSheet">
+                                  <string notr="true">#btnActualiserBon{
+	color:white;
+	background-color: rgb(156, 84, 84);
+	font: 75 italic 14pt &quot;TeX Gyre Bonum Math&quot;;
+border:2px solid rgb(94, 12, 12);
+}
+#btnActualiserBon:hover{
+	color: white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Actualiser</string>
+                                 </property>
+                                 <property name="icon">
+                                  <iconset resource="image-icon.qrc">
+                                   <normaloff>:/image/refresh_arrow_17867.png</normaloff>:/image/refresh_arrow_17867.png</iconset>
+                                 </property>
+                                 <property name="iconSize">
+                                  <size>
+                                   <width>50</width>
+                                   <height>40</height>
+                                  </size>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </widget>
+                            </item>
+                            <item alignment="Qt::AlignRight">
+                             <widget class="QLineEdit" name="lineEditSearchBon">
+                              <property name="minimumSize">
+                               <size>
+                                <width>350</width>
+                                <height>0</height>
+                               </size>
+                              </property>
+                              <property name="placeholderText">
+                               <string>Recherche bon</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QTableView" name="tbvBonSortie">
+                              <property name="styleSheet">
+                               <string notr="true"/>
+                              </property>
+                              <attribute name="horizontalHeaderCascadingSectionResizes">
+                               <bool>true</bool>
+                              </attribute>
+                              <attribute name="horizontalHeaderDefaultSectionSize">
+                               <number>150</number>
+                              </attribute>
+                              <attribute name="horizontalHeaderStretchLastSection">
+                               <bool>true</bool>
+                              </attribute>
+                              <attribute name="verticalHeaderCascadingSectionResizes">
+                               <bool>true</bool>
+                              </attribute>
+                              <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+                               <bool>false</bool>
+                              </attribute>
+                              <attribute name="verticalHeaderStretchLastSection">
+                               <bool>false</bool>
+                              </attribute>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QWidget" name="horizontalWidget_9" native="true">
+                              <property name="minimumSize">
+                               <size>
+                                <width>0</width>
+                                <height>50</height>
+                               </size>
+                              </property>
+                              <layout class="QHBoxLayout" name="horizontalLayout_23">
+                               <property name="spacing">
+                                <number>20</number>
+                               </property>
+                               <property name="rightMargin">
+                                <number>320</number>
+                               </property>
+                               <item>
+                                <widget class="QPushButton" name="btnlisteBonEntree">
+                                 <property name="styleSheet">
+                                  <string notr="true">#btnlisteBonEntree{
+	color:white;
+	background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;
+}
+#btnlisteBonEntree:hover{
+	color:white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Bon d'entrée</string>
+                                 </property>
+                                </widget>
+                               </item>
+                               <item>
+                                <widget class="QPushButton" name="btnListeBonSortie">
+                                 <property name="styleSheet">
+                                  <string notr="true">#btnListeBonSortie{
+	color:white;
+	background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;
+}
+#btnListeBonSortie:hover{
+	color:white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                                 </property>
+                                 <property name="text">
+                                  <string>Bon de sortie</string>
+                                 </property>
+                                </widget>
+                               </item>
+                              </layout>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="tab_3">
+                 <attribute name="icon">
+                  <iconset resource="image-icon.qrc">
+                   <normaloff>:/image/index.png</normaloff>:/image/index.png</iconset>
+                 </attribute>
+                 <attribute name="title">
+                  <string>Etat / Mouvement </string>
+                 </attribute>
+                 <layout class="QVBoxLayout" name="verticalLayout_25">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_24">
+                    <item>
+                     <widget class="QWidget" name="horizontalWidget_9" native="true">
+                      <property name="minimumSize">
+                       <size>
+                        <width>0</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_25">
+                       <property name="spacing">
+                        <number>50</number>
+                       </property>
+                       <property name="leftMargin">
+                        <number>100</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>100</number>
+                       </property>
+                       <item>
+                        <widget class="QPushButton" name="btnEtatStock">
+                         <property name="styleSheet">
+                          <string notr="true">#btnEtatStock{
+	color:white;
+	background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;
+}
+#btnEtatStock:hover{
+	color:white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Etat de stock</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="btnMouvementStock">
+                         <property name="styleSheet">
+                          <string notr="true">#btnMouvementStock{
+	color:white;
+	background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;
+}
+#btnMouvementStock:hover{
+	color:white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                         </property>
+                         <property name="text">
+                          <string>Mouvement de stock</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QStackedWidget" name="stackedWidget_4">
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <widget class="QWidget" name="page_3">
+                       <layout class="QVBoxLayout" name="verticalLayout_27">
+                        <item>
+                         <layout class="QVBoxLayout" name="verticalLayout_26">
+                          <property name="spacing">
+                           <number>20</number>
+                          </property>
+                          <property name="leftMargin">
+                           <number>50</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>50</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>30</number>
+                          </property>
+                          <item alignment="Qt::AlignHCenter">
+                           <widget class="QLabel" name="label_10">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>40</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">color: rgb(94, 92, 100);
+font: 75 24pt &quot;Nimbus Roman&quot;;</string>
+                            </property>
+                            <property name="text">
+                             <string>Etat de Stock</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QTableView" name="tbvEtatStock">
+                            <property name="styleSheet">
+                             <string notr="true"/>
+                            </property>
+                            <attribute name="horizontalHeaderCascadingSectionResizes">
+                             <bool>true</bool>
+                            </attribute>
+                            <attribute name="horizontalHeaderDefaultSectionSize">
+                             <number>225</number>
+                            </attribute>
+                            <attribute name="horizontalHeaderStretchLastSection">
+                             <bool>true</bool>
+                            </attribute>
+                            <attribute name="verticalHeaderCascadingSectionResizes">
+                             <bool>true</bool>
+                            </attribute>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                      <widget class="QWidget" name="page_6">
+                       <layout class="QVBoxLayout" name="verticalLayout_29">
+                        <item>
+                         <layout class="QVBoxLayout" name="verticalLayout_28">
+                          <item alignment="Qt::AlignHCenter">
+                           <widget class="QLabel" name="label_11">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>40</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>40</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">color: rgb(94, 92, 100);
+font: 75 24pt &quot;Nimbus Roman&quot;;</string>
+                            </property>
+                            <property name="text">
+                             <string>Mouvement de stock</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QWidget" name="gridWidget" native="true">
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>100</height>
+                             </size>
+                            </property>
+                            <layout class="QGridLayout" name="gridLayout">
+                             <item row="1" column="2">
+                              <widget class="QDateEdit" name="date1"/>
+                             </item>
+                             <item row="0" column="2">
+                              <widget class="QPushButton" name="btnVoir">
+                               <property name="styleSheet">
+                                <string notr="true">#btnVoir{
+	color:white;
+	background-color: rgb(156, 84, 84);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;
+}
+#btnVoir:hover{
+	color:white;
+	background-color: rgb(104, 10, 10);
+}</string>
+                               </property>
+                               <property name="text">
+                                <string>Voir</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="0">
+                              <widget class="QLabel" name="label_13">
+                               <property name="styleSheet">
+                                <string notr="true">color: rgb(94, 92, 100);
+font: 75 14pt &quot;Nimbus Roman&quot;;</string>
+                               </property>
+                               <property name="text">
+                                <string>Stock Actuel :</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="5">
+                              <widget class="QLabel" name="label_27">
+                               <property name="text">
+                                <string/>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="3">
+                              <widget class="QLabel" name="label_29">
+                               <property name="maximumSize">
+                                <size>
+                                 <width>15</width>
+                                 <height>16777215</height>
+                                </size>
+                               </property>
+                               <property name="text">
+                                <string>et</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="1">
+                              <widget class="QComboBox" name="cbBoxDesignation">
+                               <property name="minimumSize">
+                                <size>
+                                 <width>200</width>
+                                 <height>0</height>
+                                </size>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="0" column="0">
+                              <widget class="QLabel" name="label_12">
+                               <property name="styleSheet">
+                                <string notr="true">color: rgb(94, 92, 100);
+font: 75 14pt &quot;Nimbus Roman&quot;;</string>
+                               </property>
+                               <property name="text">
+                                <string>Designation :</string>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="1">
+                              <widget class="QLabel" name="labelStockActuel">
+                               <property name="styleSheet">
+                                <string notr="true">color: rgb(94, 92, 100);
+font: 75 14pt &quot;Nimbus Roman&quot;;</string>
+                               </property>
+                               <property name="text">
+                                <string/>
+                               </property>
+                              </widget>
+                             </item>
+                             <item row="1" column="4">
+                              <widget class="QDateEdit" name="date2"/>
+                             </item>
+                            </layout>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_26">
+                          <item>
+                           <widget class="QTableView" name="tbviewMvmtStock">
+                            <property name="styleSheet">
+                             <string notr="true"/>
+                            </property>
+                            <attribute name="horizontalHeaderCascadingSectionResizes">
+                             <bool>true</bool>
+                            </attribute>
+                            <attribute name="horizontalHeaderDefaultSectionSize">
+                             <number>230</number>
+                            </attribute>
+                            <attribute name="horizontalHeaderStretchLastSection">
+                             <bool>true</bool>
+                            </attribute>
+                            <attribute name="verticalHeaderCascadingSectionResizes">
+                             <bool>true</bool>
+                            </attribute>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <widget class="QWidget" name="formWidget" native="true">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>80</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>80</height>
+                           </size>
+                          </property>
+                          <layout class="QFormLayout" name="formLayout">
+                           <property name="leftMargin">
+                            <number>200</number>
+                           </property>
+                           <property name="rightMargin">
+                            <number>200</number>
+                           </property>
+                           <item row="0" column="0">
+                            <widget class="QLabel" name="label_16">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(94, 92, 100);
+font: 75 14pt &quot;Nimbus Roman&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Total entrée  : </string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="1" column="0">
+                            <widget class="QLabel" name="label_17">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(94, 92, 100);
+font: 75 14pt &quot;Nimbus Roman&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string>Total sortie    : </string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="0" column="1">
+                            <widget class="QLabel" name="labelTotalEntre">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(94, 92, 100);
+font: 75 14pt &quot;Nimbus Roman&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                           <item row="1" column="1">
+                            <widget class="QLabel" name="labelTotalSortie">
+                             <property name="styleSheet">
+                              <string notr="true">color: rgb(94, 92, 100);
+font: 75 14pt &quot;Nimbus Roman&quot;;</string>
+                             </property>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>990</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="image-icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

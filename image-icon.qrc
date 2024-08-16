@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/home_icon_131771.png</file>
+        <file>image/button_log_off_14996.png</file>
+        <file>image/userpassword_deusuari_787.png</file>
+        <file>image/spalshs.png</file>
+        <file>image/PDF_24287.png</file>
+        <file>image/key_password_lock_800.png</file>
+        <file>image/index.jpeg</file>
+        <file>image/imag.jpeg</file>
+        <file>image/customer_person_people_man_user_client_1629.png</file>
+        <file>image/people_114360.png</file>
+        <file>image/icons8-paramètres-administrateur-homme-50.png</file>
+        <file>image/calendar_office_day_1474.png</file>
+        <file>image/icons8-fichier-de-rapport-64.png</file>
+        <file>image/diagram-06_24511.png</file>
+        <file>image/bar_chart_22178.png</file>
+        <file>image/admin_person_user_man_2839.png</file>
+        <file>image/folder_data_16609.png</file>
+        <file>image/icon-5404125_960_720.png</file>
+        <file>image/iconfinder-2-avatar-2754578_120514.png</file>
+        <file>image/user.png</file>
+        <file>image/systemusers_104569.png</file>
+        <file>image/refresh_arrow_17867.png</file>
+        <file>image/refresh_arrow_1546.png</file>
+        <file>image/delete_40623.png</file>
+        <file>image/add_also_insert_255.png</file>
+        <file>image/delete_delete_deleteusers_delete_male_user_maleclient_2348.png</file>
+        <file>image/businessapplication_edit_male_user_thepencil_theclient_negocio_2321.png</file>
+        <file>image/business_application_addmale_useradd_insert_add_user_client_2312.png</file>
+        <file>image/Search_find_locate_1542.png</file>
+        <file>image/search_find_database_16703.png</file>
+        <file>image/stuffitboxproduct_stuffit_caj_2624.png</file>
+        <file>image/list_notes_930.png</file>
+        <file>image/index.png</file>
+    </qresource>
+</RCC>

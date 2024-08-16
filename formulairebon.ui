@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormulaireBon</class>
+ <widget class="QDialog" name="FormulaireBon">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>407</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Formulaire de bon</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(156, 84, 84);</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>501</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(156, 84, 84);</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>451</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="4" column="1">
+      <widget class="QComboBox" name="comboBoxNature">
+       <property name="styleSheet">
+        <string notr="true">comboBoxNature{
+	background-color: rgb(104, 10, 10);
+	color: rgb(255, 255, 255);
+}
+comboBoxNature:hover{
+	
+	background-color: rgb(255, 255, 255);
+	
+	color: rgb(104, 10, 10);
+}</string>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bonentrée</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bonsortie</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QDateEdit" name="dateEdit">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Date </string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Numéro produit</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Numéro bon</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEditNumProduit">
+       <property name="styleSheet">
+        <string notr="true">#lineEditNumProduit{
+	background-color: rgb(156, 84, 84);
+	color: white;
+	border:none;
+	font-size:18px;
+	border-bottom:2px solid  white;
+	padding:2px 2px 5px 12px;
+}
+#lineEditNumProduit:focus{
+border-bottom:2px solid  red;
+	
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="lineEditQuantite">
+       <property name="styleSheet">
+        <string notr="true">#lineEditQuantite{
+	background-color: rgb(156, 84, 84);
+	color: white;
+	border:none;
+	font-size:18px;
+	border-bottom:2px solid  white;
+	padding:2px 2px 5px 12px;
+}
+#lineEditQuantite:focus{
+
+	
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Nature</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEditNumBon">
+       <property name="styleSheet">
+        <string notr="true">#lineEditNumBon{
+	background-color: rgb(156, 84, 84);
+	color: white;
+	border:none;
+	font-size:18px;
+	border-bottom:2px solid  white;
+	padding:2px 2px 5px 12px;
+}
+#lineEditNumBon:focus{
+border-bottom:2px solid  red;
+	
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Quantité</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Selection Produit</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="comboBoxListeProduit">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(104, 10, 10);
+font: 75 italic 12pt &quot;TeX Gyre Bonum Math&quot;;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>340</y>
+      <width>421</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="btnAnnulerAjout">
+       <property name="styleSheet">
+        <string notr="true">#btnAnnulerAjout{
+	background-color: rgb(255, 255, 255);
+	font: 700 12pt &quot;Serif&quot;;
+	color: rgb(94, 12, 12);
+	border-radius:10px;
+
+}
+#btnAnnulerAjout:hover{
+	background-color:  rgb(94, 12, 12);
+	font: 700 12pt &quot;Serif&quot;;
+	color: white;
+	border-radius:10px;
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Annuler</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnValiderAjout">
+       <property name="styleSheet">
+        <string notr="true">#btnValiderAjout{
+	background-color: rgb(255, 255, 255);
+	font: 700 12pt &quot;Serif&quot;;
+	color: rgb(94, 12, 12);
+	border-radius:10px;
+
+}
+#btnValiderAjout:hover{
+	background-color:  rgb(94, 12, 12);
+	font: 700 12pt &quot;Serif&quot;;
+	color: white;
+	border-radius:10px;
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Valider</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="styleSheet">
+        <string notr="true">#pushButton{
+	background-color: rgb(255, 255, 255);
+	font: 700 12pt &quot;Serif&quot;;
+	color: rgb(94, 12, 12);
+	border-radius:10px;
+
+}
+#pushButton:hover{
+	background-color:  rgb(94, 12, 12);
+	font: 700 12pt &quot;Serif&quot;;
+	color: white;
+	border-radius:10px;
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Valider1</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
